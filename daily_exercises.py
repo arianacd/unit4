@@ -43,9 +43,6 @@ def computer_input():
     scissors = 3
 
 
-def rock_paper_scissors():
-    if
-
 
 
 
