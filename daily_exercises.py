@@ -33,17 +33,41 @@ def triangle_input():
     c = int(input("please enter a third a side length"))
     is_triangle(a, b, c)
 
+
 def computer():
+    return random.randint(1, 3)
 
 
-def rock_paper_scissors():
+def rock_paper_scissors(computer_choice):
     print("lets play rock paper scissors!")
-    print("choose rock paper or scissors")
-    random.randint(1, 3)
+    user_choice = input(int("choose 1 for rock, 2 for paper, or 3 for scissors"))
+    if user_choice == 1:
+        if computer_choice == 1:
+            print("the computer chose rock, you tied")
+        elif computer_choice == 2:
+            print("the computer chose paper, you lost")
+        else:
+            print("the computer chose scissors, you won")
+    elif user_choice == 2:
+        if computer_choice == 1:
+            print("the computer chose rock, you won")
+        elif computer_choice == 2:
+            print("the computer chose paper, you tied")
+        else:
+            print("the computer chose scissors, you lost")
+    else:
+        if computer_choice == 1:
+            print("the computer chose rock, you lost")
+        elif computer_choice == 2:
+            print("the computer chose paper, you won")
+        else:
+            print("the computer chose scissors, you tied")
+
+
     rock = 1
     paper = 2
     scissors = 3
-    if
+
 
 def main():
     number1 = int(input("please give one number"))
@@ -53,6 +77,8 @@ def main():
     else:
         print("false")
     triangle_input()
+    computer_choice = computer()
+    rock_paper_scissors(computer_choice)
 
 
 main()
