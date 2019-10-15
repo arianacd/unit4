@@ -33,19 +33,17 @@ def triangle_input():
     c = int(input("please enter a third a side length"))
     is_triangle(a, b, c)
 
+def computer():
 
-def computer_input():
+
+def rock_paper_scissors():
     print("lets play rock paper scissors!")
     print("choose rock paper or scissors")
     random.randint(1, 3)
     rock = 1
     paper = 2
     scissors = 3
-
-
-
-
-
+    if
 
 def main():
     number1 = int(input("please give one number"))
