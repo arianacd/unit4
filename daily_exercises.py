@@ -64,16 +64,28 @@ def rock_paper_scissors(computer_choice):
             print("the computer chose scissors, you tied")
 
 
-def main():
-    number1 = int(input("please give one number"))
-    number2 = int(input("please enter another number"))
-    if is_divisible(number1, number2):
-        print("true")
+def speeding(speed, birthday):
+    if birthday:
+        speed = speed - 5
+    if speed <= 61:
+        return 0
+    elif 61 <= speed <= 80:
+        return 1
     else:
-        print("false")
-    triangle_input()
-    computer_choice = computer()
-    rock_paper_scissors(computer_choice)
+        return 2
+
+
+def main():
+    # number1 = int(input("please give one number"))
+    # number2 = int(input("please enter another number"))
+    # if is_divisible(number1, number2):
+    #     print("true")
+    # else:
+    #     print("false")
+    # triangle_input()
+    # computer_choice = computer()
+    # rock_paper_scissors(computer_choice)
+    print(speeding(65, True))
 
 
 main()
