@@ -40,7 +40,7 @@ def computer():
 
 def rock_paper_scissors(computer_choice):
     print("lets play rock paper scissors!")
-    user_choice = input(int("choose 1 for rock, 2 for paper, or 3 for scissors"))
+    user_choice = int(input("choose 1 for rock, 2 for paper, or 3 for scissors"))
     if user_choice == 1:
         if computer_choice == 1:
             print("the computer chose rock, you tied")
@@ -62,11 +62,6 @@ def rock_paper_scissors(computer_choice):
             print("the computer chose paper, you won")
         else:
             print("the computer chose scissors, you tied")
-
-
-    rock = 1
-    paper = 2
-    scissors = 3
 
 
 def main():
